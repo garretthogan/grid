@@ -2,13 +2,11 @@ import { FirstPersonControls } from 'three/examples/jsm/controls/FirstPersonCont
 
 export default class Controller {
   constructor() {
-    this.fpcControls = null;
-
-    // window.addEventListener('resize', this.onWindowResize.bind(this));
+    this.fpsControls = null;
   }
 
   update(deltaTime) {
-    this.fpcControls.update(deltaTime);
+    this.fpsControls.update(deltaTime);
   }
 
   setupControls(camera, domElement) {
@@ -17,10 +15,11 @@ export default class Controller {
     controls.movementSpeed = 1000;
     controls.lookSpeed = 0.125;
     controls.lookVertical = true;
-    this.fpcControls = controls;
+    controls.activeLook = false;
+    this.fpsControls = controls;
   }
 
   handleResize() {
-    this.fpcControls.handleResize();
+    this.fpsControls.handleResize();
   }
 }

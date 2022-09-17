@@ -1,6 +1,6 @@
 <script setup>
 import SpinningBalls from '../components/SpinningBalls.vue';
-import MinecraftWorld from '../components/MinecraftWorld.vue';
+import MinecraftWorld from '../components/Lobby.vue';
 </script>
 
 <template>

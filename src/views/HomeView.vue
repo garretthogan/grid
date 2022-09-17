@@ -1,9 +1,9 @@
 <script setup>
-import MinecraftWorld from '../components/MinecraftWorld.vue';
+import Lobby from '../components/Lobby.vue';
 </script>
 
 <template>
   <main>
-    <MinecraftWorld />
+    <Lobby />
   </main>
 </template>
